@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+html{
+    background-size: 100%;
+    font-size: 62.5%;
+}
+body{
+    font-family: Consolas;
+    color: white;
+}
+.clock_frame{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.52)), url('./bimage.jpg');
+    background-size: cover;
+}
+.clock_about{
+    display: inline-block;
+    font-size:5rem;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock_data{
+    display: inline-block;
+    font-size:10rem;
+    color: white;
+    @include centering;
+}
+.quote_frame{
+    width: 1000px;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quote_main{
+    font-size:3rem;
+    color: greenyellow;
+}
+.quote_author{
+    font-size:2rem;
+    color: darkgreen;
+}
+.footer_quote{
+    font-size: 3rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
