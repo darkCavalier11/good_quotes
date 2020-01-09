@@ -2,6 +2,7 @@ const randomQuote = require('./quote')
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
+const port = process.env.PORT || 3000;
 const app = express()
 app.use(express.static(path.join(__dirname, '/templates/views')))
 app.set('views',path.join(__dirname, '/templates/views'))
@@ -11,6 +12,4 @@ app.get('/',(req, res)=>{
         res.render('index',{quote:quote, author:author})
     })
 })
-app.listen(3000, ()=>{
-    console.log('server is up and running on port 3000')
-})
+app.listen(port)
