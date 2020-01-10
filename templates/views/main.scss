@@ -1,17 +1,16 @@
+@import './mixins';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@mixin centering {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 html{
     background-size: 100%;
     font-size: 62.5%;
+    @include mediaQuery(mobile){
+        font-size: 30%;
+    }
 }
 body{
     font-family: Consolas;
@@ -24,6 +23,7 @@ body{
 }
 .clock_about{
     display: inline-block;
+    width: 30rem;
     font-size:5rem;
     color: white;
     position: absolute;
@@ -38,8 +38,8 @@ body{
     @include centering;
 }
 .quote_frame{
-    width: 1000px;
-    display: block;
+    display: inline-block;
+    width: 30rem;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -55,6 +55,8 @@ body{
     color: darkgreen;
 }
 .footer_quote{
+    display: inline-block;
+    width: 30rem;
     font-size: 3rem;
     position: absolute;
     top: 80%;

@@ -1,0 +1,13 @@
+@mixin centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin mediaQuery($screen-size){
+    @if $screen-size == mobile{
+        @media(max-width: 600px){
+            @content;
+        }
+    }
+}
