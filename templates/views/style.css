@@ -16,12 +16,13 @@ body {
 
 .clock_frame {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.52)), url("./bimage.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("./bimage.jpg");
   background-size: cover; }
 
 .clock_about {
   display: inline-block;
-  width: 30rem;
+  width: 60rem;
+  height: 10rem;
   font-size: 5rem;
   color: white;
   position: absolute;
@@ -37,10 +38,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media (max-width: 600px) {
+    .clock_data {
+      font-size: 8rem; } }
 
 .quote_frame {
   display: inline-block;
-  width: 30rem;
+  width: 60rem;
+  height: 20rem;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -52,7 +57,9 @@ body {
 
 .quote_author {
   font-size: 2rem;
-  color: darkgreen; }
+  color: orangered;
+  position: relative;
+  left: 70%; }
 
 .footer_quote {
   display: inline-block;
