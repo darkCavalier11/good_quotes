@@ -11,12 +11,12 @@ html {
       font-size: 30%; } }
 
 body {
-  font-family: Consolas;
+  font-family: Montserrat;
   color: white; }
 
 .clock_frame {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("./bimage.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.2)), url("./bimage_2.jpg");
   background-size: cover; }
 
 .clock_about {
@@ -44,8 +44,6 @@ body {
 
 .quote_frame {
   display: inline-block;
-  width: 60rem;
-  height: 20rem;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -56,6 +54,7 @@ body {
   color: greenyellow; }
 
 .quote_author {
+  display: inline-block;
   font-size: 2rem;
   color: orangered;
   position: relative;
@@ -63,8 +62,7 @@ body {
 
 .footer_quote {
   display: inline-block;
-  width: 30rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 80%;
   left: 50%;
